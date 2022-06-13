@@ -8,9 +8,11 @@
   "dependencies": {
     "@react-three/drei": "9.3.4",
     "@react-three/fiber": "8.0.10",
+    "gsap": "^3.10.4",
     "next": "latest",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
     "three": "0.139.2"
   }
 }
