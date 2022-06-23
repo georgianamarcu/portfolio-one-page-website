@@ -6,13 +6,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "@react-three/drei": "9.3.4",
-    "@react-three/fiber": "8.0.10",
-    "gsap": "^3.10.4",
+    "@emailjs/browser": "^3.6.2",
+    "@react-three/drei": "^9.3.4",
+    "@react-three/fiber": "^8.0.10",
+    "dotenv": "^16.0.1",
+    "framer-motion": "^6.3.11",
     "next": "latest",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
-    "three": "0.139.2"
+    "three": "^0.139.2",
+    "uuidv4": "^6.2.13"
   }
 }
