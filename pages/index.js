@@ -238,15 +238,21 @@ export default function IndexPage() {
                 <BsArrowRight className="projects--content-icon" />
               </a>
             </div>
-            <Link href="https://github.com/robinlej/betogether">
-              <div className="projects--content--preview-1 project-tile"></div>
-            </Link>
-            <Link href="https://github.com/georgianamarcu/gidle-worldtour-page">
-              <div className="projects--content--preview-3 project-tile"></div>
-            </Link>
-            <Link href="https://github.com/RaphaCH/not-another-cookbook">
-              <div className="projects--content--preview-2 project-tile"></div>
-            </Link>
+            <a
+              href="https://github.com/robinlej/betogether"
+              className="projects--content--preview-1 project-tile"
+              target="_blank"
+            ></a>
+            <a
+              href="https://github.com/georgianamarcu/gidle-worldtour-page"
+              target="_blank"
+              className="projects--content--preview-3 project-tile"
+            ></a>
+            <a
+              href="https://github.com/RaphaCH/not-another-cookbook"
+              target="_blank"
+              className="projects--content--preview-2 project-tile"
+            ></a>
           </div>
         </div>
       </section>
@@ -318,16 +324,23 @@ export default function IndexPage() {
                   ></textarea>
                 </div>
                 <div className="contact--form-button-flex">
+                  <div className="contact--social">
+                    <a
+                      href="https://www.linkedin.com/in/georgianamarcu/"
+                      target="_blank"
+                    >
+                      <GrLinkedin className="contact--social--icon" />
+                    </a>
+                    <a href="https://github.com/georgianamarcu" target="_blank">
+                      <BsGithub className="contact--social--icon" />
+                    </a>
+                  </div>
                   <button
                     className="contact--form--button"
                     type="submit"
                   ></button>
                 </div>
               </form>
-            </div>
-            <div className="contact--social">
-              {/* <GrLinkedin />
-              <BsGithub /> */}
             </div>
           </div>
         </div>

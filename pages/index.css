@@ -392,10 +392,6 @@ html {
   margin-left: 30%;
 }
 
-.contact--form {
-  width: 60%;
-}
-
 input[type=text] {
   padding: 1em;
   border: none;
@@ -444,7 +440,7 @@ input[type=text]::placeholder {
 
 .contact--form-button-flex {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 1em;
   margin-right: 4em;
 }
@@ -488,6 +484,16 @@ input[type=text]::placeholder {
 .contact--page--flex {
   display: flex;
 
+}
+
+.contact--social {
+  display: flex;
+  gap: 2em;
+}
+
+.contact--social--icon {
+  font-size: 3em;
+  color: var(--primary);
 }
 
 /*Mobile version*/
