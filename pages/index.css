@@ -13,14 +13,15 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #1C2242;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #1C2242;
 }
+
 
 /* Three.js canvas styling */
 
@@ -36,12 +37,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  z-index: 2;
   position: sticky;
   background-color: transparent;
   margin-top: 4em;
   padding: 1em;
   border-right: 1px solid var(--primary);
+
 }
 
 .navbar a {
@@ -70,17 +71,8 @@ html {
   transition: all 0.2s ease-in-out;
 }
 
-.navbar a:nth-child(1):hover~.line {
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transform: translateY(-122px);
-  transform: translateY(-122px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
 
-.navbar a:nth-child(2):hover~.line {
+.navbar a:nth-child(1):hover~.line {
   -webkit-transform: translateY(-82px);
   transform: translateY(-82px);
   -webkit-transition: all 0.2s ease-in-out;
@@ -88,7 +80,7 @@ html {
   opacity: 1;
 }
 
-.navbar a:nth-child(3):hover~.line {
+.navbar a:nth-child(2):hover~.line {
   -webkit-transform: translateY(-40px);
   transform: translateY(-40px);
   -webkit-transition: all 0.2s ease-in-out;
@@ -96,7 +88,7 @@ html {
   opacity: 1;
 }
 
-.navbar a:nth-child(4):hover~.line {
+.navbar a:nth-child(3):hover~.line {
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
   -webkit-transition: all 0.2s ease-in-out;
@@ -188,6 +180,43 @@ html {
   }
 }
 
+.scroll-to-top {
+  display: inline-block;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(18, 18, 146, 0.174);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.283);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  border: none;
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  z-index: 30;
+}
+
+.scroll-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 50px;
+  padding: 15px;
+  color: var(--primary);
+
+}
+
+.scroll-to-top:hover {
+  cursor: pointer;
+  background-color: rgb(45, 45, 45);
+}
+
+.scroll-to-top:active {
+  background-color: #555;
+}
 
 #about {
   padding: 4em;
@@ -211,7 +240,7 @@ html {
 .about--content {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
 }
 
 
@@ -455,3 +484,10 @@ input[type=text]::placeholder {
   top: 0px;
   left: 0px;
 }
+
+.contact--page--flex {
+  display: flex;
+
+}
+
+/*Mobile version*/

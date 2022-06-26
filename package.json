@@ -15,6 +15,9 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
+    "react-scroll-parallax": "^3.2.0",
+    "sweetalert2": "^11.4.18",
+    "sweetalert2-react-content": "^5.0.0",
     "three": "^0.139.2",
     "uuidv4": "^6.2.13"
   }
